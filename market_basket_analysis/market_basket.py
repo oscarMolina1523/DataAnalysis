@@ -85,4 +85,21 @@ frequent_itemsets = apriori(basket_bool, min_support=0.002, use_colnames=True)
 rules = association_rules(frequent_itemsets, metric="confidence", min_threshold=0.1)
 #note: reduce the lift from 1.2 to 1.0 because the output of rules is empty
 rules = rules[rules["lift"] > 1.0]
-print(rules[['antecedents','consequents','support','confidence','lift']].head(10))
+rules[['antecedents','consequents','support','confidence','lift']].head(10)
+
+# select top 10 rules for support
+# Convert frozenset to simple string 
+def fs_to_str(fs):
+    return ', '.join(list(fs))  
+
+top_rules = rules.sort_values(by="support", ascending=False).head(10)
+
+plt.figure(figsize=(10,6))
+plt.barh(range(len(top_rules)), top_rules['support'], color='skyblue')
+plt.yticks(range(len(top_rules)), [f"{fs_to_str(a)} → {fs_to_str(c)}" 
+                                   for a,c in zip(top_rules['antecedents'], top_rules['consequents'])])
+plt.gca().invert_yaxis()
+plt.xlabel("Support")
+plt.title("Top 10 Reglas de Asociación por Support")
+plt.tight_layout()
+plt.show()
