@@ -3,7 +3,7 @@
 ###
 
 <div align="center">
-  <img height="auto" src="https://i.ibb.co/Mk7Mh3ZV/data-Analits.png"  />
+  <img height="auto" src="https://i.ibb.co/F44kqcNC/data-Analits.png"  />
 </div>
 
 ###
