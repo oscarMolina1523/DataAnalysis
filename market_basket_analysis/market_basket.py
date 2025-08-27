@@ -1,4 +1,5 @@
 import pandas as pd
+from mlxtend.frequent_patterns import apriori, association_rules
 import numpy as np
 import matplotlib.pyplot as plt
 from sklearn.preprocessing import MinMaxScaler
@@ -50,8 +51,18 @@ basket = df.groupby(["InvoiceNo", "Description"])["Quantity"].sum().unstack().fi
 
 #now we need to convert the values to 1 and 0
 #1 means the product was bought and 0 means the product wasnt bought
-basket = basket.applymap(lambda x: 1 if x > 0 else 0)
+#basket = basket.applymap(lambda x: 1 if x > 0 else 0) #this work good but pandas want to deprecate it
+basket_bool = basket > 0
 #print(basket)
 
 #THIRD POINT
 #apply apriori algorithm to find frequent itemsets
+
+#first Apriori algorithm works better with boolean values
+#so we need to convert the values to boolean
+
+#here in min_support i put 0.02 because i want to filter only items with at least 2% of support
+#and use_colnames=True to use the column names instead of the column indexes
+frequent_itemsets = apriori(basket_bool, min_support=0.02, use_colnames=True)
+
+print(frequent_itemsets.head())
