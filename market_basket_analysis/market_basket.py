@@ -103,3 +103,9 @@ plt.xlabel("Support")
 plt.title("Top 10 Reglas de Asociación por Support")
 plt.tight_layout()
 plt.show()
+
+#this is a red of rules showing in console
+top_rules_display = top_rules.copy()
+top_rules_display['antecedents'] = top_rules_display['antecedents'].apply(fs_to_str)
+top_rules_display['consequents'] = top_rules_display['consequents'].apply(fs_to_str)
+print(top_rules_display[['antecedents','consequents','support','confidence','lift']])
