@@ -1,0 +1,37 @@
+# Archivos compilados de Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Entornos virtuales
+venv/
+.env/
+.venv/
+
+# Configuración de IDEs
+.vscode/
+.idea/
+
+# Archivos de logs
+*.log
+
+# Archivos temporales del sistema
+.DS_Store
+Thumbs.db
+
+# Archivos de pruebas
+.coverage
+.pytest_cache/
+htmlcov/
+
+# Bases de datos locales o temporales
+*.sqlite3
+
+# Archivos de Jupyter Notebook
+.ipynb_checkpoints/
+
+# Entornos de producción
+*.egg-info/
+dist/
+build/
