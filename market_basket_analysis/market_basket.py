@@ -104,7 +104,20 @@ plt.title("Top 10 Reglas de Asociación por Support")
 plt.tight_layout()
 plt.show()
 
-#this is a red of rules showing in console
+#dispersion chart
+plt.figure(figsize=(10,6))
+plt.scatter(top_rules['confidence'], top_rules['lift'], 
+            s=top_rules['support']*2000, alpha=0.6, c='red', edgecolors='black')
+for i, row in top_rules.iterrows():
+    plt.text(row['confidence'], row['lift'], f"{fs_to_str(row['antecedents'])} → {fs_to_str(row['consequents'])}",
+             fontsize=8, ha='right')
+plt.xlabel("Confidence")
+plt.ylabel("Lift")
+plt.title("Top 10 Reglas de Asociación: Confidence vs Lift (Tamaño = Support)")
+plt.tight_layout()
+plt.show()
+
+#this is a red of rules showing in console TABLE
 top_rules_display = top_rules.copy()
 top_rules_display['antecedents'] = top_rules_display['antecedents'].apply(fs_to_str)
 top_rules_display['consequents'] = top_rules_display['consequents'].apply(fs_to_str)
