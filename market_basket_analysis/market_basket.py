@@ -52,3 +52,6 @@ basket = df.groupby(["InvoiceNo", "Description"])["Quantity"].sum().unstack().fi
 #1 means the product was bought and 0 means the product wasnt bought
 basket = basket.applymap(lambda x: 1 if x > 0 else 0)
 #print(basket)
+
+#THIRD POINT
+#apply apriori algorithm to find frequent itemsets
