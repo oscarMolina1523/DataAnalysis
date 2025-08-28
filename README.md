@@ -39,7 +39,7 @@ git clone https://github.com/oscarMolina1523/DataAnalysis.git
 cd DataAnalysis
 
 #instalar dependencias 
-pip install pandas mlxtend matplotlib
+pip install -r requirements.txt
 
 #correr el archivo de Market Basket
 python market_basket_analysis/market_basket.py
