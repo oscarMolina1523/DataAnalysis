@@ -1,8 +1,6 @@
 import pandas as pd
 from mlxtend.frequent_patterns import apriori, association_rules
-import numpy as np
 import matplotlib.pyplot as plt
-from sklearn.preprocessing import MinMaxScaler
 
 #FIRST POINT
 #read data
@@ -33,6 +31,7 @@ df["TotalPrice"] = df["Quantity"] * df["UnitPrice"]
 
 #and now i need to convert the InvoiceDate to datetime
 df["InvoiceDate"] = pd.to_datetime(df["InvoiceDate"])
+df.to_csv("market_preprocesados.csv", index=False)
 
 #print(df)
 
