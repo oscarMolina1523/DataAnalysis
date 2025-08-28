@@ -14,10 +14,10 @@ if __name__ == "__main__":
     # top_rules_display['consequents'] = top_rules_display['consequents'].apply(fs_to_str)
 
     # 1. preprocessing
-    df = preprocess_data()
+    preprocess_data()
 
     # 2. transaction matrix
-    basket_bool = create_transaction_matrix(df)
+    basket_bool = create_transaction_matrix()
 
     # 3. Apriori and rules
     rules = run_apriori(basket_bool)
