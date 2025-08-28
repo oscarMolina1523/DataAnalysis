@@ -1,4 +1,8 @@
-def create_transaction_matrix(df):
+import pandas as pd
+def create_transaction_matrix():
+
+    df = pd.read_csv('market_basket_analysis/data/market_preprocesados.csv')
+
     #SECOND POINT
     #prepare transactional matrix
     #first i need to group by InvoiceNo and Description
