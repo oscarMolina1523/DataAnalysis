@@ -1,6 +1,9 @@
 import pandas as pd
+import os
 
-def preprocess_data(input_file="ventas_ejemplo.csv", output_file="data/market_preprocesados.csv"):
+def preprocess_data(input_file="ventas_ejemplo.csv", output_file="market_basket_analysis/data/market_preprocesados.csv"):
+    os.makedirs(os.path.dirname(output_file), exist_ok=True)
+    
     #FIRST POINT
     #read data
     #df=pd.read_csv('ventas_ejemplo.csv')
@@ -35,3 +38,4 @@ def preprocess_data(input_file="ventas_ejemplo.csv", output_file="data/market_pr
     df.to_csv(output_file, index=False)
 
     #print(df)
+    return df
