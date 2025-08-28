@@ -2,6 +2,7 @@ import pandas as pd
 import os
 
 def preprocess_data(input_file="ventas_ejemplo.csv", output_file="market_basket_analysis/data/market_preprocesados.csv"):
+    #if the folder doesnt exist create one
     os.makedirs(os.path.dirname(output_file), exist_ok=True)
     
     #FIRST POINT
