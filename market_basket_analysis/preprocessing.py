@@ -39,4 +39,4 @@ def preprocess_data(input_file="ventas_ejemplo.csv", output_file="market_basket_
     df.to_csv(output_file, index=False)
 
     #print(df)
-    return df
+    #return df
