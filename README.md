@@ -42,7 +42,7 @@ cd DataAnalysis
 pip install -r requirements.txt
 
 #correr el archivo de Market Basket
-python market_basket_analysis/main.py
+python -m market_basket_analysis.market_main
 ```
 ###
 
