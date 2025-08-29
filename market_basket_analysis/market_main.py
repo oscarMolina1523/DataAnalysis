@@ -1,7 +1,7 @@
-from preprocessing import preprocess_data
-from transactions import create_transaction_matrix
-from apriori_analysis import run_apriori
-from visualization import plot_top_rules, plot_scatter
+from market_basket_analysis.market_preprocessing import preprocess_data
+from market_basket_analysis.market_transactions import create_transaction_matrix
+from market_basket_analysis.apriori_analysis import run_apriori
+from market_basket_analysis.market_visualization import plot_top_rules, plot_scatter
 
 
 if __name__ == "__main__":
