@@ -3,7 +3,7 @@ from market_basket_analysis.market_transactions import create_transaction_matrix
 from market_basket_analysis.apriori_analysis import run_apriori
 from market_basket_analysis.market_visualization import plot_top_rules, plot_scatter
 
-
+#This ensures that it only runs when you run it directly and not when you import it.
 if __name__ == "__main__":
     #rules[['antecedents','consequents','support','confidence','lift']].head(10)
     #top_rules = rules.sort_values(by="support", ascending=False).head(10)
