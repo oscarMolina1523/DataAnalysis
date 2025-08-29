@@ -33,7 +33,7 @@ def create_rfm():
         "InvoiceDate": "Recency",
         "InvoiceNo": "Frequency",
         "Total Price": "Monetary"
-    }, inplace=True)
+    }, inplace=True) #inplace=True means modify the original Dataframe instead of creating a copy.
 
     #save RFM in csv file
     rfm.to_csv('customer_segmentation/data/rfm_data.csv')
