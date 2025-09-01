@@ -40,5 +40,5 @@ def create_rfm():
 
     #save RFM in csv file
     rfm.to_csv('customer_segmentation/data/rfm_data.csv')
-    print(rfm)
+    #print(rfm)
     return rfm
