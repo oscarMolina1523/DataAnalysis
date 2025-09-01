@@ -35,6 +35,9 @@ def create_rfm():
         "Total Price": "Monetary"
     }, inplace=True) #inplace=True means modify the original Dataframe instead of creating a copy.
 
+    #clean rfm only select valid customerId and monetary > 0
+    rfm = rfm[(rfm.index.notnull()) & (rfm["Monetary"] > 0)]
+
     #save RFM in csv file
     rfm.to_csv('customer_segmentation/data/rfm_data.csv')
     print(rfm)
