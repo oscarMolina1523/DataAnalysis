@@ -35,3 +35,69 @@ def analyze_clusters(rfm):
 # 0    25
 # 1     9
 # Name: count, dtype: int64
+
+
+#como interpretarlo?
+# 🔎 Interpretación por cluster
+# 🟢 Cluster 3 (26 clientes)
+
+# Recency: 12.4 → muy bajo → compraron hace poco.
+
+# Frequency: 13.9 → altísimo → son clientes que compran mucho.
+
+# Monetary: 3717 → altísimo → gastan un montón.
+
+# 👉 Son tus clientes VIP.
+# Pocos en número (26), pero muy valiosos.
+# 💡 Estrategia: Fidelízalos → programas de lealtad, beneficios exclusivos, descuentos premium.
+
+# 🔵 Cluster 2 (40 clientes)
+
+# Recency: 14.6 → bajo → compraron recientemente.
+
+# Frequency: 9.9 → alto → compran seguido.
+
+# Monetary: 2523 → alto → gastan bastante.
+
+# 👉 Son buenos clientes frecuentes, no tan VIP como el cluster 3, pero igual muy valiosos.
+# 💡 Estrategia: Incentívalos a convertirse en VIP → promociones de cross-selling (productos relacionados).
+
+# 🟡 Cluster 0 (25 clientes)
+
+# Recency: 13.3 → bajo → compraron hace poco.
+
+# Frequency: 6.7 → medio → compran de vez en cuando.
+
+# Monetary: 1480 → medio-bajo → gastan menos que otros clusters.
+
+# 👉 Son clientes regulares.
+# No gastan tanto, pero siguen activos.
+# 💡 Estrategia: Ofréceles promociones para que compren más seguido o productos de mayor valor.
+
+# 🔴 Cluster 1 (9 clientes)
+
+# Recency: 62.6 → muy alto → hace mucho que no compran.
+
+# Frequency: 8.2 → medio-alto → en el pasado solían comprar.
+
+# Monetary: 1825 → gastaban bien.
+
+# 👉 Son clientes en riesgo o casi perdidos.
+# En algún momento fueron valiosos, pero ahora no vuelven.
+# 💡 Estrategia: Re-engagement → correos de “te extrañamos”, cupones de regreso, llamadas personalizadas.
+
+# 🎯 Resumen ejecutivo
+
+# Cluster 3 (26 clientes, VIPs) = más importantes, muchos ingresos.
+
+# Cluster 2 (40 clientes, buenos regulares) = segunda prioridad, con potencial de volverse VIPs.
+
+# Cluster 0 (25 clientes, regulares básicos) = activos pero de bajo gasto.
+
+# Cluster 1 (9 clientes, en riesgo) = antes compraban, ahora están alejados.
+
+# 👉 En la práctica esto te sirve para hacer marketing segmentado:
+
+# No gastas recursos tratando a todos los clientes igual.
+
+# Sabes quiénes valen más y quiénes están a punto de abandonarte.
