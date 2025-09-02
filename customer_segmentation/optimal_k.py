@@ -48,3 +48,43 @@ def find_optimal_k(rfm_scaled, max_k=10):
     plt.ylabel("Silhouette Score")
     plt.title("Silhouette Method")
     plt.show()
+
+
+# 📊 1. Método del Codo (Inertia)
+
+# En el gráfico azul, la inertia baja a medida que aumentas K (cantidad de clusters).
+
+# Lo que buscas es el “codo”, es decir, el punto donde la curva deja de bajar fuerte y empieza a aplanarse.
+
+# En tu gráfico:
+
+# De K=2 a K=4 la caída es muy fuerte.
+
+# De K=5 en adelante la curva ya baja poquito.
+
+# 🔎 Entonces, el codo está más o menos en K=4 o K=5.
+# Eso significa que 4 o 5 clusters son un buen número para segmentar.
+
+# 📊 2. Método del Silhouette
+
+# Este mide qué tan “compactos y separados” están los clusters (0 a 1, más alto = mejor).
+
+# En tu gráfico rojo:
+
+# El valor más alto está en K=3 (~0.35).
+
+# Luego va bajando y los clusters se vuelven menos definidos.
+
+# 🔎 Eso significa que el clustering más claro y separado lo logras con K=3.
+
+# 🧩 Cómo juntarlos
+
+# El codo sugiere 4 o 5 clusters (bueno para balancear tamaño).
+
+# El silhouette sugiere 3 clusters (mejor separación, más calidad).
+
+# No existe una respuesta absoluta:
+
+# Si prefieres calidad de clusters bien separados, usa 3 clusters.
+
+# Si prefieres más detalle en los grupos (aunque con algo más de mezcla), usa 4 o 5 clusters.
