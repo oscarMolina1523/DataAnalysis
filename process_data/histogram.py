@@ -69,8 +69,15 @@ fin = (max_edad // ancho) * ancho       # 45 -> 45
 #y el ancho de cada secuencia en este caso 5
 bordes = np.arange(inicio, fin + ancho + 1, ancho)
 
-# pd.cut asigna cada edad a un bin; right=False hace intervalos [a, b)
+# pd.cut asigna cada edad a un grupo correcto
+#recibe los datos que son [edades], asigna limite con [bordes]
+#right=False es de tipo [a, b] es decir el dato de la izquierda se asigna pero el de la derecha no
+#Por ejemplo, el primer grupo es de [15, 20). Esto significa que incluye 
+#el 15, el 16, el 17, el 18 y el 19, pero no el 20. El número 20 irá en el siguiente grupo.
+#include_lowest=True asegura que si el valor más pequeño de tus datos (en este caso, 18)
+# es igual al primer borde de la clase (15), el valor se incluya en el primer grupo.
 cats = pd.cut(edades, bins=bordes, right=False, include_lowest=True)
+
 frecuencias = cats.value_counts().sort_index()
 
 # Etiquetas legibles para reporte: "15–19", "20–24", ...
