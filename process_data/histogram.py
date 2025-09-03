@@ -78,6 +78,8 @@ bordes = np.arange(inicio, fin + ancho + 1, ancho)
 # es igual al primer borde de la clase (15), el valor se incluya en el primer grupo.
 cats = pd.cut(edades, bins=bordes, right=False, include_lowest=True)
 
+#el value_counts() cuenta cuantas edades caen en cada categoria
+#y el sort_index() ordena de menor a mayor
 frecuencias = cats.value_counts().sort_index()
 
 # Etiquetas legibles para reporte: "15–19", "20–24", ...
