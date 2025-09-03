@@ -83,6 +83,10 @@ cats = pd.cut(edades, bins=bordes, right=False, include_lowest=True)
 frecuencias = cats.value_counts().sort_index()
 
 # Etiquetas legibles para reporte: "15–19", "20–24", ...
+#es decir el bucle for recorre de 0 a 6 ya que bordes-1 es 7 y el ultimo valor no se toma en cuenta
+#luego usando el indice accede al valor de cada ciclo es este caso bordes[i] es 15 
+#y bordes[i+1] es 20 y luego restas 1 se convierte en 19 porque tenemos nuemeros de 15-19 
+#ya que el proximo ciclo empieza en 20
 etiquetas = [f"{bordes[i]}–{bordes[i+1]-1}" for i in range(len(bordes)-1)]
 
 tabla = pd.DataFrame({
