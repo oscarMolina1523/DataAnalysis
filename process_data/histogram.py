@@ -94,6 +94,9 @@ tabla = pd.DataFrame({
     "Frecuencia": frecuencias.values,
 })
 tabla["% relativo"] = (tabla["Frecuencia"] / len(edades) * 100).round(2)
+#cumsum es la frecuencia acumulada es decir 
+#El primer valor es 1. La suma acumulada es 1.
+#El segundo valor es 3. Suma el valor actual (3) al acumulado anterior (1). El nuevo acumulado es 1+3=4.
 tabla["Frec acumulada"] = tabla["Frecuencia"].cumsum()
 
 print("\nTabla de frecuencias (5 años):")
