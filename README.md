@@ -1,5 +1,6 @@
-<h1 align="left">🛒 Market Basket Analysis con Apriori</h1>
+<h1 align="left">Analisis de Mineria de Datos con Diferentes ejemplos reales</h1>
 
+<h2 align="left">🛒 Market Basket Analysis con Apriori</h1>
 ###
 
 <div align="center">
