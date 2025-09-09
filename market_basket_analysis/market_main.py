@@ -1,7 +1,7 @@
 #If you want read how does this code works
 #i create a notion page to explain it
 #in a simple way
-#link: https://www.notion.so/mineria-de-datos/Market-Basket-Analysis-an-lisis-de-la-cesta-de-la-compra-2647c9c9fb1780cf8730dbc85cc814f9?source=copy_link
+#link: https://oscarmolina.notion.site/Miner-a-de-Datos-2647c9c9fb1780b6b058d82151099e68?pvs=74
 
 
 from market_basket_analysis.market_preprocessing import preprocess_data
