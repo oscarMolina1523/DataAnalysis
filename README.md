@@ -12,14 +12,6 @@
 
 ###
 
-<h2 align="left">📌 Funcionalidades</h2>
-
-###
-
-<p align="left">- Generación de "itemsets frecuentes" con el algoritmo Apriori.<br>- Obtención de "reglas de asociación" filtradas por:<br>  - "support"<br>  - "confidence"<br>  - "lift"<br>- Conversión de "frozenset" a etiquetas legibles (ej. Producto 15 → Producto 18).<br>- Visualización de resultados con:<br>  - "Gráfico de barras" (Top 10 reglas por "support").<br>  - "Gráfico de dispersión" ("confidence" vs "lift" con tamaño proporcional al "support").<br>- Interpretación práctica de reglas clave.</p>
-
-###
-
 <h2 align="left">⚙️ Tecnologías usadas</h2>
 
 ###
