@@ -42,8 +42,6 @@ pca = PCA(n_components=2)
 
 X_pca = pca.fit_transform(X_scaled) 
 
-  
-
 print("Varianza explicada por los componentes:", pca.explained_variance_ratio_) 
 
 print("Nuevas características (primeras 2 filas):") 
