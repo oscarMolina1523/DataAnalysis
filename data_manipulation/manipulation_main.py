@@ -51,3 +51,23 @@ plt.axvline(0, color='gray', linestyle='--', linewidth=0.8)
 plt.axhline(0, color='gray', linestyle='--', linewidth=0.8)
 plt.grid(True)
 plt.show()
+
+
+# Puntos Originales (Círculos Azules): 
+# Estos puntos representan tus datos sin procesar.
+
+# Puntos Normalizados (Cruces Naranjas): 
+# La normalización (usando el método MinMaxScaler) escala tus datos a un rango fijo,
+#  generalmente de 0 a 1. Como puedes ver en el gráfico, todas las cruces naranjas se 
+# agrupan en un área cuadrada en la esquina superior derecha, con valores de 0 a 1 en ambos ejes. 
+# Esto significa que el punto con el valor más bajo en cada columna fue escalado a 0, y el punto con
+#  el valor más alto fue escalado a 1. La normalización es útil para algoritmos que necesitan que los 
+# datos estén en un rango específico.
+
+# Puntos Estandarizados (Cuadrados Verdes): 
+# La estandarización (usando el método StandardScaler) transforma tus 
+# datos para que tengan una media de 0 y una desviación estándar de 1.
+#  Los cuadrados verdes están centrados alrededor del punto (0,0) en el gráfico.
+#  Un valor de 0 indica que ese dato es el promedio del grupo, mientras que un valor 
+# de 1 significa que está a una desviación estándar por encima del promedio. Este método es 
+# ideal para algoritmos que asumen que los datos tienen una distribución normal.
