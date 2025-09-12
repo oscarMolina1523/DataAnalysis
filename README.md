@@ -11,6 +11,18 @@
 <p align="left">Este proyecto implementa un <strong>"análisis de canasta de mercado"</strong> (Market Basket Analysis) utilizando el algoritmo <strong>"Apriori"</strong> en Python.  <br>El objetivo es descubrir <strong>"reglas de asociación"</strong> entre productos a partir de transacciones simuladas, ayudando a encontrar patrones de compra que puedan usarse en estrategias de marketing, promociones o diseño de tiendas.</p>
 
 ###
+<h2 align="left">👥 Customer Segmentation</h1>
+
+<div align="center">
+  <img src="https://i.ibb.co/KxMvvkrq/silhoutevselbow.png" alt="silhoutevselbow" border="0">
+</div>
+
+###
+
+<p align="left">Este proyecto implementa un "análisis de segmentación de clientes" (Customer Segmentation) utilizando el análisis RFM y el algoritmo de clustering K-Means en Python.
+El objetivo es descubrir "grupos de clientes" con comportamientos de compra similares (recencia, frecuencia y valor monetario). Esta segmentación ayuda a crear estrategias de marketing personalizadas, mejorar la retención de clientes y optimizar las campañas de ventas.</p>
+
+###
 
 <h2 align="left">⚙️ Tecnologías usadas</h2>
 
