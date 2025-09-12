@@ -28,7 +28,7 @@ El objetivo es descubrir <strong>"grupos de clientes"</strong> con comportamient
 
 ###
 
-<p align="left">- Python 3.x<br>- [Pandas](https://pandas.pydata.org/)<br>- [mlxtend](http://rasbt.github.io/mlxtend/) (para "apriori" y "association_rules")<br>- Matplotlib<br>-seaborn</p>
+<p align="left">- Python 3.x<br>- [Pandas](https://pandas.pydata.org/)<br>- [mlxtend](http://rasbt.github.io/mlxtend/) (para "apriori" y "association_rules")<br>- Matplotlib<br>- Seaborn</p>
 
 ###
 
