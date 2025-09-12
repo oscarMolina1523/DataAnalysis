@@ -19,8 +19,8 @@
 
 ###
 
-<p align="left">Este proyecto implementa un "análisis de segmentación de clientes" (Customer Segmentation) utilizando el análisis RFM y el algoritmo de clustering K-Means en Python.
-El objetivo es descubrir "grupos de clientes" con comportamientos de compra similares (recencia, frecuencia y valor monetario). Esta segmentación ayuda a crear estrategias de marketing personalizadas, mejorar la retención de clientes y optimizar las campañas de ventas.</p>
+<p align="left">Este proyecto implementa un <strong>"análisis de segmentación de clientes" (Customer Segmentation)</strong> utilizando el análisis <strong>RFM</strong> y el algoritmo de clustering <strong>K-Means</strong> en Python.
+El objetivo es descubrir <strong>"grupos de clientes"</strong> con comportamientos de compra similares (recencia, frecuencia y valor monetario). Esta segmentación ayuda a crear <strong>estrategias de marketing personalizadas,</strong> mejorar la retención de clientes y <strong>optimizar las campañas de ventas.</strong></p>
 
 ###
 
