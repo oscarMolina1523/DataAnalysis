@@ -1,7 +1,7 @@
 <h1 align="left">Analisis de Mineria de Datos con Diferentes ejemplos reales</h1>
 <p>Puedes leer la explicación a detalle del código usado en este repositorio en mi Notion: https://oscarmolina.notion.site/Miner-a-de-Datos-2647c9c9fb1780b6b058d82151099e68
 
-Encontrarás</p>
+Encontrarás código de ejemplo de diferentes</p>
 <h2 align="left">🛒 Market Basket Analysis con Apriori</h1>
 
 <div align="center">
