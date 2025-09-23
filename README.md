@@ -10,7 +10,7 @@ Encontrarás código de ejemplo de diferentes casos reales y documentación del 
 
 ###
 
-<p align="left">Este proyecto implementa un <strong>"análisis de canasta de mercado"</strong> (Market Basket Analysis) utilizando el algoritmo <strong>"Apriori"</strong> en Python.  <br>El objetivo es descubrir <strong>"reglas de asociación"</strong> entre productos a partir de transacciones simuladas, ayudando a encontrar patrones de compra que puedan usarse en estrategias de marketing, promociones o diseño de tiendas, de esta manera podremos personalizar combos y estrategias.</p>
+<p align="left">Este proyecto implementa un <strong>"análisis de canasta de mercado"</strong> (Market Basket Analysis) utilizando el algoritmo <strong>"Apriori"</strong> en Python.  <br>El objetivo es descubrir <strong>"reglas de asociación"</strong> entre productos a partir de transacciones simuladas, ayudando a encontrar patrones de compra que puedan usarse en estrategias de marketing, promociones o diseño de tiendas, de esta manera podremos personalizar combos y estrategias personalizadas.</p>
 
 ###
 <h2 align="left">👥 Customer Segmentation</h1>
