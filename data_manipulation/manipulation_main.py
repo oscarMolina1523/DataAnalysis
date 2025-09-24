@@ -12,6 +12,8 @@ data = {
     'Ingresos': [500.0, 1200.0, 1180.0, 700.0, 1500.0, 2000.0]
 }
 df = pd.DataFrame(data)
+df.to_csv("data_manipulation/data/manipulation_preprocesados.csv", index=False)
+df = pd.read_csv('data_manipulation/data/manipulation_preprocesados.csv')
 
 # Imputación (para asegurar que los datos estén limpios)
 df['Edad'] = df['Edad'].fillna(df['Edad'].mean())
