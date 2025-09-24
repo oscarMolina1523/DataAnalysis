@@ -1,5 +1,7 @@
 <h1 align="left">Analisis de Mineria de Datos con Diferentes ejemplos reales</h1>
-<p>Puedes leer la explicación a detalle del código usado en este repositorio en mi Notion: https://oscarmolina.notion.site/Miner-a-de-Datos-2647c9c9fb1780b6b058d82151099e68</p>
+<p>Puedes leer la explicación a detalle del código usado en este repositorio en mi Notion: https://oscarmolina.notion.site/Miner-a-de-Datos-2647c9c9fb1780b6b058d82151099e68
+
+Encontrarás código de ejemplo de diferentes casos reales y documentación del código generado paso a paso, la explicación a fondo en mi notion te ayudará a entender el objetivo.</p>
 <h2 align="left">🛒 Market Basket Analysis con Apriori</h1>
 
 <div align="center">
@@ -8,7 +10,19 @@
 
 ###
 
-<p align="left">Este proyecto implementa un <strong>"análisis de canasta de mercado"</strong> (Market Basket Analysis) utilizando el algoritmo <strong>"Apriori"</strong> en Python.  <br>El objetivo es descubrir <strong>"reglas de asociación"</strong> entre productos a partir de transacciones simuladas, ayudando a encontrar patrones de compra que puedan usarse en estrategias de marketing, promociones o diseño de tiendas.</p>
+<p align="left">Este proyecto implementa un <strong>"análisis de canasta de mercado"</strong> (Market Basket Analysis) utilizando el algoritmo <strong>"Apriori"</strong> en Python.  <br>El objetivo es descubrir <strong>"reglas de asociación"</strong> entre productos a partir de transacciones simuladas, ayudando a encontrar patrones de compra que puedan usarse en estrategias de marketing, promociones o diseño de tiendas, de esta manera podremos personalizar combos y estrategias personalizadas.</p>
+
+###
+<h2 align="left">👥 Customer Segmentation</h1>
+
+<div align="center">
+  <img src="https://i.ibb.co/KxMvvkrq/silhoutevselbow.png" alt="silhoutevselbow" border="0">
+</div>
+
+###
+
+<p align="left">Este proyecto implementa un <strong>"análisis de segmentación de clientes" (Customer Segmentation)</strong> utilizando el análisis <strong>RFM</strong> y el algoritmo de clustering <strong>K-Means</strong> en Python.
+El objetivo es descubrir <strong>"grupos de clientes"</strong> con comportamientos de compra similares (recencia, frecuencia y valor monetario). Esta segmentación ayuda a crear <strong>estrategias de marketing personalizadas,</strong> mejorar la retención de clientes y <strong>optimizar las campañas de ventas.</strong></p>
 
 ###
 
@@ -16,7 +30,7 @@
 
 ###
 
-<p align="left">- Python 3.x<br>- [Pandas](https://pandas.pydata.org/)<br>- [mlxtend](http://rasbt.github.io/mlxtend/) (para "apriori" y "association_rules")<br>- Matplotlib</p>
+<p align="left">- Python 3.x<br>- [Pandas](https://pandas.pydata.org/)<br>- [mlxtend](http://rasbt.github.io/mlxtend/) (para "apriori" y "association_rules")<br>- Matplotlib<br>- Seaborn</p>
 
 ###
 
